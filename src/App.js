@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import './App.css';
+import About from './pages/About';
+import  Contact from './pages/Contact';
+import Header from './pages/Header';
+
+import { FocusCardsDemo } from './pages/PhotoGallery';
+
+import { SpotlightPreview } from './pages/Spotlight';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header/>
+    <SpotlightPreview/>
+    
+    <About/>
+   
+<FocusCardsDemo/>
+    <Contact/>
+   
     </div>
   );
 }

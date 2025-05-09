@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.photo{
+  @apply rounded-xl  hover:rotate-0 duration-500 hover:-translate-y-12 md:w-[350px] md:h-[250px] object-cover transform 
+}
