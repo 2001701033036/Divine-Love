@@ -38,8 +38,10 @@ export function FocusCardsDemo() {
 <p className="text-3xl font-semibold text-orange-300 font-serif">Our church life</p>
         </div>
 
-<FocusCards cards={cards} />;
-<p>gggg</p>
+<FocusCards cards={cards} />
+<div className=' item-end justify-center flex mt-10 '>
+         <button className='  p-1   border-4 border-orange-300 rounded text-white font-serif font-semibold px-3 py-2 hover:bg-orange-300 text-lg'>Allphotos</button>
+     </div>
     </section>
   ) 
  
