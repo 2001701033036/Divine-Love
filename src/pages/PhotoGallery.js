@@ -1,5 +1,4 @@
 
-import { useState } from 'react';
 import img1 from '../asset/g1.webp'
 import img2 from '../asset/p3.webp'
 import img3 from '../asset/p4.webp'

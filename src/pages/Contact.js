@@ -64,6 +64,7 @@ const Contact = () => {
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7539767273397!2d80.15461840986777!3d12.85916061728268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52590e513ee591%3A0x4bea0bca90fc5a40!2sDivine%20Love%20Church!5e0!3m2!1sen!2sin!4v1750740026056!5m2!1sen!2sin" 
   width="400" 
   height="400" 
+  title='mobile map'
   
   allowfullscreen="" 
   loading="lazy" 
@@ -71,12 +72,14 @@ const Contact = () => {
   className="rounded-lg  w-[450px] p-5 md:hidden"
   >
   </iframe>
+
     </div>
 
      <div className=' hidden md:block'>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7539767273397!2d80.15461840986777!3d12.85916061728268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52590e513ee591%3A0x4bea0bca90fc5a40!2sDivine%20Love%20Church!5e0!3m2!1sen!2sin!4v1750740026056!5m2!1sen!2sin" 
   width="600" 
   height="400" 
+  title='web map'
   
   allowfullscreen="" 
   loading="lazy" 

@@ -11,7 +11,7 @@ const About = ()=>{
             descriptino:""
         }
     ]
-    const [item,setItem] = useState(0);
+    const [item] = useState(0);
     const setData = data[item];
     return(
 
