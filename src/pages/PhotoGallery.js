@@ -39,8 +39,7 @@ export function FocusCardsDemo() {
     },
   ];
 
-  const [photo,setPhoto]=useState(0)
-  const setdata = cards[photo]
+ 
 
   return(
     <section className="bg-neutral-900 scroll-mt-16 pt-20" id='Gallery'>

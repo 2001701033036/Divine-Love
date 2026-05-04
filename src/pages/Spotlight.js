@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 
 
 import img1 from '../asset/event1.jpg'
-import img2 from '../asset/event2.jpg'
-import img3 from '../asset/church.jpg'
+
 
 import p1 from '../asset/p1.webp'
 import p2 from '../asset/p2.webp'
@@ -16,7 +15,7 @@ import { cn } from "@/lib/utils";
 // import { Spotlight } from "../ui/spotlight";
 
 import { Spotlight } from "../component/ui/Spotlight";
-import { DotBackgroundDemo } from "../component/ui/DotBackgroundDemo.js";
+// import { DotBackgroundDemo } from "../component/ui/DotBackgroundDemo.js";
 
 export function SpotlightPreview() {
     const data =[
@@ -159,10 +158,10 @@ useEffect(() => {
         <p className="text-white text-2xl text-start"> Morning - 10:00 am - 12.30pm</p>
         <p className="text-gray-400 text-xl font-thin text-justify">We want you to feel at home here-and we know that doesn't happen overnight.So, if there's anything you need or want from us, please let us know! We'll do our best to make sure it happens for you </p>
        
-       <a href="#Contact"/> 
+       <a href="#Contact"> 
         <button className="p-2 border-2 border-orange-400 hover:bg-orange-400 text-white"> Contact us</button>
        
-       <a/>
+       </a>
 
       </div>
       

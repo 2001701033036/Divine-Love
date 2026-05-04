@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import img1 from '../asset/event1.jpg'
+
 import c1 from '../asset/c1.webp'
-import { Button } from '../component/ui/moving-border';
+
 const About = ()=>{
     const data=[
         {
@@ -22,7 +22,7 @@ const About = ()=>{
     <div className='flex flex-col justify-center p-5 md:p-0 '>
         <p className='text-3xl font-semibold animate__animated animate__bounceIn font-serif text-white text-start mb-2 ' >{setData.title}</p>
         <p className='md:text-3xl font-semibold font-serif text-orange-300 text-start'>{setData.titledesc}</p>
-  <img data-aos="fade-right" className=" md:w-[500px] md:h-[300px]  items-center justify-center text-center" src={setData.image}/>
+  <img alt='church' data-aos="fade-right" className=" md:w-[500px] md:h-[300px]  items-center justify-center text-center" src={setData.image}/>
     </div>
     <div className=''>
     
