@@ -4,12 +4,15 @@ import 'aos/dist/aos.css';
 
 import './App.css';
 import About from './pages/About';
-import  Contact from './pages/Contact';
+import Contact from './pages/Contact';
 import Header from './pages/Header';
 
 import { FocusCardsDemo } from './pages/PhotoGallery';
 
 import { SpotlightPreview } from './pages/Spotlight';
+
+
+
 
 function App() {
   useEffect(() => {
@@ -22,6 +25,8 @@ function App() {
     <div className="App">
     <Header/>
     <SpotlightPreview/>
+
+    
     
     <About/>
    

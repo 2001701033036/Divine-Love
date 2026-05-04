@@ -15,10 +15,10 @@ export const Card = React.memo(({
       "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
       hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
     )}>
-    <img src={card.src} alt={card.title} className="object-cover absolute inset-0" />
+    <img src={card.src} alt={card.title} className="object-cover absolute inset-0 h-[300px] w-[300px] " />
     <div
       className={cn(
-        "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
+        "absolute inset-0  flex items-end py-4 px-4 transition-opacity duration-300",
         hovered === index ? "opacity-100" : "opacity-0"
       )}>
       <div
@@ -38,7 +38,7 @@ export function FocusCards({
 
   return (
     <div
-      className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
+      className="grid grid-cols-2 md:grid-cols-3 md:gap-10 max-w-5xl mx-auto md:px-8 w-full">
       {cards.map((card, index) => (
         <Card
           key={card.title}

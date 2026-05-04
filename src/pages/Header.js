@@ -6,7 +6,7 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header className="bg-neutral-800 fixed top-0 left-0 w-full z-50">
+    <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-14">
         {/* Logo + Name */}
         <div className="flex items-center gap-3">
@@ -15,7 +15,7 @@ const Header = () => {
             src={logo}
             alt="Logo"
           />
-          <span className="text-white text-xl font-bold">Divine Love Church</span>
+          <span className="text-white text-2xl font-bold">Divine Love Church</span>
         </div>
 
         {/* Desktop Nav */}

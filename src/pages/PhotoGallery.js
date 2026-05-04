@@ -1,34 +1,46 @@
 
+import { useState } from 'react';
+import img1 from '../asset/g1.webp'
+import img2 from '../asset/p3.webp'
+import img3 from '../asset/p4.webp'
+import img4 from '../asset/p1.webp'
+import img5 from '../asset/p5.webp'
+import img6 from '../asset/p2.webp'
+
 
 import { FocusCards } from "../component/ui/focus-card";
 
 export function FocusCardsDemo() {
   const cards = [
     {
-      title: "Forest Adventure",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      
+      src: img1,
+      
     },
     {
-      title: "Valley of life",
-      src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      
+      src: img2,
     },
     {
-      title: "Sala behta hi jayega",
-      src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      
+      src: img3,
     },
     {
-      title: "Camping is for pros",
-      src: "https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      
+      src: img4,
     },
     {
-      title: "The road not taken",
-      src: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      
+      src: img5,
     },
     {
-      title: "The First Rule",
-      src: "https://assets.aceternity.com/the-first-rule.png",
+      
+      src: img6,
     },
   ];
+
+  const [photo,setPhoto]=useState(0)
+  const setdata = cards[photo]
 
   return(
     <section className="bg-neutral-900 scroll-mt-16 pt-20" id='Gallery'>
@@ -36,10 +48,15 @@ export function FocusCardsDemo() {
         <div className=" ">      
 <p className="text-lg text-white  ">PhotoGallery</p>       
 <p className="text-3xl font-semibold text-orange-300 font-serif">Our church life</p>
+
         </div>
 
 <FocusCards cards={cards} />
 <div className=' item-end justify-center flex mt-10 '>
+
+  
+
+  
          <button className='  p-1   border-4 border-orange-300 rounded text-white font-serif font-semibold px-3 py-2 hover:bg-orange-300 text-lg'>Allphotos</button>
      </div>
     </section>

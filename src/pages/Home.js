@@ -109,15 +109,21 @@ useEffect(() => {
 <FaGreaterThan className="text-black " />
 
     </button>
-  
-  
-    
+
   </div>
 </div>
       </div>
     </div>
+     <div>
+      <p className="text-white bg-slate-200" >Join a community</p>
     </div>
     </div>
+
+   
+
+    </div>
+
+    
    </section>
   );
 }
